@@ -1,5 +1,29 @@
-/* COULEURS */ 
+// POLICES GOOGLE
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
+
+// POLICE
+$roboto-font: 'Roboto', sans-serif;
+$shrikhand-font: 'Shrikhand', cursive; 
+
+/// COULEURS 
 
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$btn-txt-color: white;
+$footer-txt-color: white;
+$bg-color: white;
+$bg-color-alt: #F6F6F6;
+$dark-bg-color-alt: darken($bg-color-alt, 5%);
+
+/// TAILLES GENERALES
+$card-width: 100%;
+$global-width: 100%;
+
+// BORDER RADIUS
+$card-radius: 20px;
+
+/// TAILLES POUR RESPONSIVE
+
+$mobile-width: 450px;
+

@@ -1,1 +1,22 @@
+@charset "UTF-8";
+
+// UTILS
 @import "./utils/variables";
+@import "./Utils/mixins";
+
+// VENDORS
+
+// BASE 
+@import "./Base/base";
+// LAYOUTS
+@import "./Layout/header";
+@import "./Layout/location";
+@import "./Layout/presentation";
+// COMPONENTS
+@import "./Components/button";
+@import "./Components/logo";
+@import "./Components/instructions";
+// PAGES 
+@import "./Pages/index";
+// THEMES
+

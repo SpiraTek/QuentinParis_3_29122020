@@ -1,0 +1,33 @@
+// Section instructions
+
+.instructions__cards {
+    @include flexcenter;
+    flex-direction: column;
+}
+
+.instructions__cards__wrap {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    margin-top: 1.5em;
+    background-color: $bg-color-alt;
+    border-radius: $card-radius;
+    width: auto;
+    counter-increment: list;
+
+        &::before {
+            content: counter(list);
+            display: flex;
+            justify-content: left;
+            color: $footer-txt-color;
+            background-color: $color-primary;
+            border-radius: 50%;
+            padding: 5px;
+        }
+
+
+        &__icons {
+
+        }
+
+}

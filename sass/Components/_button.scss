@@ -1,0 +1,9 @@
+// Style des boutons
+
+.btn {
+    background: linear-gradient(350deg, $color-primary, $color-secondary);
+    border: none;
+    border-radius: 40px;
+    color: $btn-txt-color;
+    padding: 14px 20px;
+}
