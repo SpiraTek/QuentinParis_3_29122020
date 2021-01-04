@@ -1,0 +1,74 @@
+// Bloc Restaurants 
+
+.restaurants {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $bg-color-alt;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}   
+
+
+.restaurants__card {
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-color;
+    border-radius: $card-radius;
+
+    &__wrap {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        
+    }
+
+    &--img {
+        display: flex;
+        object-fit: cover;
+        position: relative;
+        margin:0;
+        border-radius: $img-border-radius;
+        height: 100%;
+        width: auto;
+        max-height: 220px;      
+    }
+
+    &--txt {
+        line-height: 10px;
+        margin-left: 15px;
+        position: relative;
+    }
+
+    &__like {
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        
+    }
+
+    &__new {
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 230px;
+        border-radius: 3px;
+        background: $color-tertiary;
+        font-weight: 500;
+        color: darken($color-tertiary, 40%);
+        right: 15px;
+        width: 5rem;
+        height: 2em;
+    
+    }
+
+ 
+}

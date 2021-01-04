@@ -15,6 +15,7 @@ $footer-txt-color: white;
 $bg-color: white;
 $bg-color-alt: #F6F6F6;
 $dark-bg-color-alt: darken($bg-color-alt, 5%);
+$light-bg-color-alt: lighten($bg-color-alt, 5%);
 
 /// TAILLES GENERALES
 $card-width: 100%;
@@ -22,6 +23,7 @@ $global-width: 100%;
 
 // BORDER RADIUS
 $card-radius: 20px;
+$img-border-radius: 20px 20px 0 0;
 
 /// TAILLES POUR RESPONSIVE
 

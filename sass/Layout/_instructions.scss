@@ -1,0 +1,53 @@
+// Section instructions
+.instructions {
+    padding-top: 2rem;
+    margin-left: 20px;
+    padding-bottom: 2rem;
+
+    &__title {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    }
+}
+.instructions__cards {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 90%;
+   margin-top: 0;
+   padding-left: 10px;
+   padding-right: 1rem;
+
+}
+.instructions__cards__wrap {
+    display: flex;
+    align-items: center;
+    background-color: $bg-color-alt;
+    border-radius: $card-radius;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 25px;
+    counter-increment: list;
+
+        &::before {
+            content: counter(list);
+            font-weight: normal;
+            color: $footer-txt-color;
+            background-color: $color-primary;
+            border: solid 4px $color-primary;
+            border-radius: 50%;
+            padding: 0 5px 0 5px;
+            margin-left: -26px;
+            
+        }
+
+
+        &__icons {
+            color: grey;
+            margin-right: 20px;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+
+}
