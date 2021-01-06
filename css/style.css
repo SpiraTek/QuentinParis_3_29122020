@@ -125,7 +125,7 @@ ol {
 
 .restaurants {
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   margin-top: 2rem;
   padding-left: 20px;
   padding-right: 20px;
@@ -147,26 +147,29 @@ ol {
   display: flex;
   margin: auto;
   flex-direction: column;
+  height: auto;
 }
 .restaurants__card--img {
-  display: flex;
   object-fit: cover;
+  object-position: bottom;
   position: relative;
   margin: 0;
   border-radius: 20px 20px 0 0;
-  height: 100%;
   width: auto;
-  max-height: 220px;
+  max-height: 180px;
 }
 .restaurants__card--txt {
-  line-height: 10px;
+  line-height: 8px;
   margin-left: 15px;
+  margin-top: 20px;
+  padding-bottom: 8px;
   position: relative;
 }
 .restaurants__card__like {
   position: absolute;
-  top: 10px;
-  right: 30px;
+  top: 0px;
+  right: 25px;
+  font-size: 1.7rem;
 }
 .restaurants__card__new {
   z-index: 1;
@@ -174,7 +177,7 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 230px;
+  bottom: 210px;
   border-radius: 3px;
   background: #99E2D0;
   font-weight: 500;
@@ -182,6 +185,26 @@ ol {
   right: 15px;
   width: 5rem;
   height: 2em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 40px 20px;
+  background-color: #353535;
+}
+.footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+  color: white;
+}
+.footer a {
+  color: white;
+  display: block;
+  line-height: 1.5rem;
+}
+.footer i {
+  margin-right: 10px;
 }
 
 .btn {

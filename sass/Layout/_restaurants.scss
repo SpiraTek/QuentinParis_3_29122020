@@ -2,7 +2,7 @@
 
 .restaurants {
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     margin-top: 2rem;
     padding-left: 20px;
     padding-right: 20px;
@@ -26,30 +26,33 @@
         display: flex;
         margin: auto;
         flex-direction: column;
-        
+        height: auto;
     }
 
     &--img {
-        display: flex;
         object-fit: cover;
+        object-position: bottom;
         position: relative;
         margin:0;
         border-radius: $img-border-radius;
-        height: 100%;
         width: auto;
-        max-height: 220px;      
+        max-height: 180px;   
+         
     }
 
     &--txt {
-        line-height: 10px;
+        line-height: 8px;
         margin-left: 15px;
+        margin-top: 20px;
+        padding-bottom: 8px;
         position: relative;
     }
 
     &__like {
         position: absolute;
-        top: 10px;
-        right: 30px;
+        top: 0px;
+        right: 25px;
+        font-size: 1.7rem;
         
     }
 
@@ -59,7 +62,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        bottom: 230px;
+        bottom: 210px;
         border-radius: 3px;
         background: $color-tertiary;
         font-weight: 500;

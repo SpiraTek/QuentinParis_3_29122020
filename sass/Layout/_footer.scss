@@ -1,0 +1,24 @@
+// Footer
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 40px 20px;
+    background-color: $bg-color-footer;
+
+    & h3 {
+        font-family: $shrikhand-font;
+        font-weight: normal;
+        color: $btn-txt-color;
+    }
+
+    & a {
+        color: $btn-txt-color;
+        display: block;
+        line-height: 1.5rem;
+    }
+
+    & i { 
+        margin-right: 10px;
+    }
+}
