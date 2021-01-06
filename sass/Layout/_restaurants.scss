@@ -62,14 +62,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        bottom: 210px;
+        bottom: 220px;
+        right: 15px;
         border-radius: 3px;
         background: $color-tertiary;
         font-weight: 500;
         color: darken($color-tertiary, 40%);
-        right: 15px;
-        width: 5rem;
-        height: 2em;
+        font-size: 14px;
+        width: 75px;
+        height: 25px;
     
     }
 

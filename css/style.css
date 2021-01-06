@@ -77,9 +77,9 @@ ol {
 }
 
 .instructions {
-  padding-top: 2rem;
+  padding-top: 25px;
   margin-left: 20px;
-  padding-bottom: 2rem;
+  padding-bottom: 20px;
 }
 .instructions__title {
   padding-bottom: 0;
@@ -102,7 +102,7 @@ ol {
   background-color: #F6F6F6;
   border-radius: 20px;
   font-weight: bold;
-  padding: 15px;
+  padding: 10px 15px;
   margin-top: 25px;
   counter-increment: list;
 }
@@ -177,14 +177,15 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 210px;
+  bottom: 220px;
+  right: 15px;
   border-radius: 3px;
   background: #99E2D0;
   font-weight: 500;
   color: #278870;
-  right: 15px;
-  width: 5rem;
-  height: 2em;
+  font-size: 14px;
+  width: 75px;
+  height: 25px;
 }
 
 .footer {
@@ -211,8 +212,9 @@ ol {
   background: linear-gradient(350deg, #9356DC, #FF79DA);
   border: none;
   border-radius: 40px;
+  font-size: 1rem;
   color: white;
-  padding: 14px 20px;
+  padding: 18px 20px;
 }
 
 .logo {
