@@ -1,0 +1,42 @@
+// Règles de mise en page pour les pages restaurants. 
+
+.menus__img--img {
+    object-fit: cover;
+    max-width: 400px;
+}
+
+.menus {
+    background-color: $bg-color-alt;
+    border-radius: $restaurant-top-radius;
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 2.5rem 1rem 1rem 0;
+        font-size: 1.1rem;
+        margin: auto;
+    }
+
+    &__heart {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+        padding-left: 1rem;
+    }
+}
+
+
+.menus__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    width: 90%;
+    border-radius: $card-radius;
+    background-color: $bg-color;
+}
+
+
+
