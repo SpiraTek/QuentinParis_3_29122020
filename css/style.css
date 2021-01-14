@@ -224,12 +224,25 @@ ol {
   height: 25px;
 }
 
-.menus__img--img {
-  object-fit: cover;
-  max-width: 400px;
+.menus__bgimg {
+  display: grid;
+  height: 250px;
+}
+
+.bgpalette {
+  background-image: url(../../img/restau1.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  height: 260px;
 }
 
 .menus {
+  position: relative;
+  margin-top: -2rem;
   background-color: #F6F6F6;
   border-radius: 50px 50px 0 0;
 }
@@ -237,7 +250,7 @@ ol {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 2.5rem 1rem 1rem 0;
+  padding: 2rem 1rem 1rem 0;
   font-size: 1.1rem;
   margin: auto;
 }
@@ -246,17 +259,65 @@ ol {
   margin-bottom: 5px;
   padding-left: 1rem;
 }
+.menus__subtitle {
+  font-weight: normal;
+  margin: 1.5rem 0 2rem 1rem;
+}
 
 .menus__cards {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin: auto;
   margin-top: 1rem;
   padding-left: 1rem;
   width: 90%;
+  overflow: hidden;
+  position: relative;
   border-radius: 20px;
   background-color: white;
+}
+.menus__cards__text {
+  overflow: hidden;
+  white-space: nowrap;
+  flex-grow: 1;
+}
+.menus__cards__price {
+  padding-bottom: 0.9rem;
+  margin-right: 1.2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  align-self: flex-end;
+}
+.menus__cards__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  right: -20%;
+}
+
+.menu__cards__text--gras {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  margin-top: 0.9rem;
+  font-weight: bolder;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu__cards__text--light {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  margin-bottom: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.checkcircle {
+  color: white;
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
