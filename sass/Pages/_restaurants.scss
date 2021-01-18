@@ -107,4 +107,12 @@
     font-size: 1.6rem;
 }
 
+.order {
+    display: flex;
+    justify-content: center;
+    padding: 4em;
 
+    &__button {
+        width: 85%;
+    }
+ }
