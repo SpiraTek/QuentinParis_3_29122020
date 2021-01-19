@@ -1,5 +1,26 @@
 // Règles de mise en page pour les pages restaurants. 
 
+.header--restaurants {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.logo {
+    height: auto;
+    width: auto;
+}
+
+.arrow__icon {
+    position: absolute;
+    color: $bg-color-footer;
+    left: 1rem;
+    top: 2rem;
+    font-size: 1.2rem;
+}
+
 .menus__bgimg {
     display: grid;
     height: 250px;
@@ -26,7 +47,7 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        padding: 2rem 1rem 1rem 0;
+        padding: 2rem 1rem 0 0;
         font-size: 1.1rem;
         margin: auto;
     }
@@ -39,8 +60,20 @@
 
     &__subtitle {
         font-weight: normal;
-        margin: 1.5rem 0 2rem 1rem;
+        margin: 3rem 0 0.4rem 1rem;
     }
+}
+
+.menus__subtitle:first-child {
+    margin-top: 1.8rem;
+}
+
+.underline {
+    border: none;
+    background-color: $color-tertiary;
+    height: 3px;
+    width: 12%;
+    margin: 0 0 0 1.1rem;
 }
 
 
