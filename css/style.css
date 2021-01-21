@@ -65,6 +65,12 @@ ol {
   color: white;
   box-shadow: 0 3px 6px #E0DEDE;
   padding: 18px 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  box-shadow: 3px 3px 6px #E0DEDE;
 }
 
 .logo {
@@ -77,12 +83,8 @@ ol {
 
 .fa-heart {
   display: block;
-  box-sizing: content-box;
+  background-color: linear-gradient(350deg, #9356DC, #FF79DA);
 }
-.fa-heart:hover {
-  background: linear-gradient(350deg, #9356DC, #FF79DA);
-}
-
 .location {
   display: flex;
   justify-content: center;
@@ -327,16 +329,20 @@ ol {
   position: relative;
   border-radius: 20px;
   background-color: white;
+  box-shadow: 0 8px 17px #E0DEDE;
 }
 .menus__cards__text {
   overflow: hidden;
   white-space: nowrap;
-  flex-grow: 1;
+  width: 90%;
+  transition: all 0.6s ease-in-out;
 }
 .menus__cards__price {
   padding-bottom: 0.9rem;
-  margin-right: 1.2rem;
+  margin-right: 1rem;
   font-size: 0.9rem;
+  width: 10%;
+  display: flex;
   font-weight: bold;
   align-self: flex-end;
 }
@@ -349,6 +355,7 @@ ol {
   height: 100%;
   position: absolute;
   right: -20%;
+  transition: all 0.6s ease-in-out;
 }
 
 .menu__cards__text--gras {
@@ -371,6 +378,23 @@ ol {
 .checkcircle {
   color: white;
   font-size: 1.6rem;
+  transition: all 0.6s ease-in-out;
+}
+
+.menus__cards:hover {
+  cursor: pointer;
+}
+
+.menus__cards:hover .menus__cards__circle {
+  right: 0%;
+}
+
+.menus__cards:hover .checkcircle {
+  transform: rotate(360deg);
+}
+
+.menus__cards:hover .menus__cards__text {
+  width: 70%;
 }
 
 .order {
