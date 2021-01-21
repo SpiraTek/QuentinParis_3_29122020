@@ -83,11 +83,22 @@ ol {
 
 .fa-heart {
   font-size: 1.7rem;
-  display: block;
+  box-sizing: content-box;
 }
-.fa-heart:hover {
-  background: border-box linear-gradient(350deg, #9356DC, #FF79DA);
-  cursor: pointer;
+
+.full-heart {
+  display: none;
+}
+
+.empty-heart:hover ~ .full-heart {
+  display: initial;
+  color: transparent;
+  background: linear-gradient(350deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+}
+
+.empty-heart:hover {
+  display: none;
 }
 
 .location {
@@ -202,6 +213,7 @@ ol {
 .restaurants__card {
   display: flex;
   flex-direction: column;
+  position: relative;
   background-color: white;
   box-shadow: 0 8px 17px #E0DEDE;
   border-radius: 20px;

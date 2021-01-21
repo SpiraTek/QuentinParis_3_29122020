@@ -140,9 +140,11 @@
 .restaurants__card {
     display: flex;
     flex-direction: column;
+    position: relative;
     background-color: $bg-color;
     box-shadow: 0 8px 17px $box-shadow-color;
     border-radius: $card-radius;
+    
 
     &__wrap {
         display: flex;
@@ -174,7 +176,6 @@
         position: absolute;
         top: 0px;
         right: 25px;
-        
     }
 
     &__new {
@@ -197,5 +198,6 @@
 
  
 }
+
 
 
