@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/3e6a841702.js"crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3e6a841702.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Oh My Food!</title>
 </head>
@@ -28,7 +28,9 @@
         <div class="presentation">
             <h2 class="presentation__title">Réservez le menu qui vous convient</h2>
             <p class="presentation__subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <button class="presentation_button btn">Explorez nos restaurants</button>
+            <a href="#restaurants">
+                <button class="presentation_button btn">Explorez nos restaurants</button>
+            </a>
         </div>
         </section>
 
@@ -60,7 +62,7 @@
 
         <!--RESTAURANTS-->
 
-        <section class="restaurants">
+        <section class="restaurants" id="restaurants">
 
             <h2 class="restaurants__title">Restaurants</h2>
 
@@ -76,7 +78,8 @@
                             <p class="restaurants__card__location">Ménilmontant</p>
                             <span class="restaurants__card__new">Nouveau</span>
                             <div class="restaurants__card__like">
-                                <i class="fas fa-heart like restaurants__card__like--heart"></i>
+                                <i class="far fa-heart like restaurants__card__like--heart empty-heart"></i>
+                                <i class="fas fa-heart like restaurants__card__like--heart full-heart"></i>
                             </div>
                         </figcaption>
                     </a>
@@ -92,7 +95,8 @@
                             <p class="restaurants__card__location">Charonne</p>
                             <span class="restaurants__card__new">Nouveau</span>
                             <div class="restaurants__card__like">
-                                <i class="fas fa-heart like restaurants__card__like--heart"></i>
+                                <i class="far fa-heart like restaurants__card__like--heart empty-heart"></i>
+                                <i class="fas fa-heart like restaurants__card__like--heart full-heart"></i>
                             </div>
                         </figcaption>
                     </a>
@@ -107,7 +111,8 @@
                             <h3 class="restaurants__card__title">À la française</h3>
                             <p class="restaurants__card__location">Cité Rouge</p>
                             <div class="restaurants__card__like">
-                                <i class="fas fa-heart like restaurants__card__like--heart"></i>
+                                <i class="far fa-heart like restaurants__card__like--heart empty-heart"></i>
+                                <i class="fas fa-heart like restaurants__card__like--heart full-heart"></i>
                             </div>
                         </figcaption>
                     </a>
@@ -122,7 +127,8 @@
                             <h3 class="restaurants__card__title">Le délice des sens</h3>
                             <p class="restaurants__card__location">Folie-Méricourt</p>
                             <div class="restaurants__card__like">
-                                <i class="fas fa-heart like restaurants__card__like--heart"></i>
+                                <i class="far fa-heart like restaurants__card__like--heart empty-heart"></i>
+                                <i class="fas fa-heart like restaurants__card__like--heart full-heart"></i>
                             </div>
                         </figcaption>
                     </a>
@@ -140,10 +146,6 @@
             <a href="#">Mentions légales</a>
             <a href="mailto:contact@ohmyfood.com">Contact</a>
         </div>
-
-
-
-
     </footer>
 
 </body>

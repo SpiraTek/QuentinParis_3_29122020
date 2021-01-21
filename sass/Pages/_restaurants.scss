@@ -1,0 +1,177 @@
+// Règles de mise en page pour les pages restaurants. 
+
+.header--restaurants {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.logo {
+    height: auto;
+    width: auto;
+}
+
+.arrow__icon {
+    position: absolute;
+    color: $bg-color-footer;
+    left: 1rem;
+    top: 2rem;
+    font-size: 1.2rem;
+}
+
+.menus__bgimg {
+    display: grid;
+    height: 250px;
+}
+
+.bgpalette {
+    background-image: url(../../img/restau1.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 260px;
+}
+
+.menus {
+    position: relative;
+    margin-top: -2rem;
+    background-color: $bg-color-alt;
+    border-radius: $restaurant-top-radius;
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 2rem 1rem 0 0;
+        font-size: 1.1rem;
+        margin: auto;
+    }
+
+    &__heart {
+        margin-bottom: 5px;
+        padding-left: 1rem;
+    }
+
+    &__subtitle {
+        font-weight: normal;
+        margin: 3rem 0 0.4rem 1rem;
+    }
+}
+
+.menus__subtitle:first-child {
+    margin-top: 1.8rem;
+}
+
+.underline {
+    border: none;
+    background-color: $color-tertiary;
+    height: 3px;
+    width: 12%;
+    margin: 0 0 0 1.1rem;
+}
+
+
+.menus__cards {
+    display: flex;
+    margin: auto;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+    border-radius: $card-radius;
+    background-color: $bg-color;
+    box-shadow: 0 8px 17px $box-shadow-color;
+
+    &__text {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 90%;
+        transition: all 0.6s ease-in-out;
+        
+    }
+
+    &__price {
+        padding-bottom: 0.9rem;
+        margin-right: 1rem;
+        font-size: 0.9rem;
+        width: 10%;
+        display: flex;
+        font-weight: bold;
+        align-self: flex-end;
+    }
+
+    &__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-tertiary;
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        right: -20%;
+        transition: all 0.6s ease-in-out;
+        
+
+    }
+
+}
+
+.menu__cards__text--gras {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    margin-top: 0.9rem;
+    font-weight: bolder;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu__cards__text--light {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    margin-bottom: 0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.checkcircle {
+    color: white;
+    font-size: 1.6rem;
+    transition: all 0.6s ease-in-out;
+}
+
+.menus__cards:hover {
+    cursor: pointer;
+}
+
+// Animation du check circle
+
+
+.menus__cards:hover .menus__cards__circle {
+    right: 0%;
+}
+
+.menus__cards:hover .checkcircle {
+    transform: rotate(360deg)
+}
+
+.menus__cards:hover .menus__cards__text {
+    width:70%;
+}
+
+// Boutton Commander
+
+.order {
+    display: flex;
+    justify-content: center;
+    padding: 4em;
+
+    &__button {
+        width: 85%;
+    }
+ }

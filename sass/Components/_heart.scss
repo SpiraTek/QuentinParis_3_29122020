@@ -1,0 +1,22 @@
+// Style pour les coeurs 
+.fa-heart {
+    font-size: 1.7rem;
+    box-sizing: content-box;
+}
+
+.full-heart {
+    display: none;
+}
+
+.empty-heart:hover ~ .full-heart{
+    display: initial;
+    color: transparent;
+    background: linear-gradient(350deg, $color-primary, $color-secondary);
+    -webkit-background-clip: text; // Définit le texte / icone en tant que background
+    
+}
+
+.empty-heart:hover {
+    display: none;
+    
+}

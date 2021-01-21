@@ -10,15 +10,13 @@
 @import "./Base/base";
 // LAYOUTS
 @import "./Layout/header";
-@import "./Layout/location";
-@import "./Layout/presentation";
-@import "./Layout/instructions";
-@import "./Layout/restaurants";
 @import "./Layout/footer";
 // COMPONENTS
 @import "./Components/button";
 @import "./Components/logo";
+@import "./Components/heart";
 // PAGES 
 @import "./Pages/index";
+@import "./Pages/restaurants";
 // THEMES
 

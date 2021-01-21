@@ -6,5 +6,13 @@
     border-radius: 40px;
     font-size: 1rem;
     color: $btn-txt-color;
+    box-shadow:  0 3px 6px $box-shadow-color;
     padding: 18px 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:hover {
+    box-shadow: 6px 3px 6px $box-shadow-color;
+
 }
