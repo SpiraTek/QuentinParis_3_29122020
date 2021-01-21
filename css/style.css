@@ -70,7 +70,7 @@ ol {
 }
 
 .btn:hover {
-  box-shadow: 3px 3px 6px #E0DEDE;
+  box-shadow: 6px 3px 6px #E0DEDE;
 }
 
 .logo {
@@ -82,9 +82,14 @@ ol {
 }
 
 .fa-heart {
+  font-size: 1.7rem;
   display: block;
-  background-color: linear-gradient(350deg, #9356DC, #FF79DA);
 }
+.fa-heart:hover {
+  background: border-box linear-gradient(350deg, #9356DC, #FF79DA);
+  cursor: pointer;
+}
+
 .location {
   display: flex;
   justify-content: center;
@@ -227,7 +232,6 @@ ol {
   position: absolute;
   top: 0px;
   right: 25px;
-  font-size: 1.7rem;
 }
 .restaurants__card__new {
   z-index: 1;
@@ -298,7 +302,6 @@ ol {
   margin: auto;
 }
 .menus__heart {
-  font-size: 1.5rem;
   margin-bottom: 5px;
   padding-left: 1rem;
 }

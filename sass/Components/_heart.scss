@@ -1,9 +1,10 @@
 // Style pour les coeurs 
 .fa-heart {
+    font-size: 1.7rem;
     display: block;
-    background-color: linear-gradient(350deg, $color-primary, $color-secondary);
 
     &:hover {
-    
+    background: border-box linear-gradient(350deg, $color-primary, $color-secondary);
+    cursor: pointer;
     }
 }
