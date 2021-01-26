@@ -11,7 +11,7 @@
 .empty-heart:hover ~ .full-heart{
     display: initial;
     color: transparent;
-    background: linear-gradient(350deg, $color-primary, $color-secondary);
+    background: linear-gradient(200deg, $color-primary, $color-secondary);
     -webkit-background-clip: text; // Définit le texte / icone en tant que background
     
 }

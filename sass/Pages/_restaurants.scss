@@ -152,15 +152,15 @@
 // Animation du check circle
 
 
-.menus__cards:hover .menus__cards__circle {
+.menus__cards:hover .menus__cards__circle {  // Déplacement vers la gauche
     right: 0%;
 }
 
-.menus__cards:hover .checkcircle {
+.menus__cards:hover .checkcircle {  // Rotation du Check Circle
     transform: rotate(360deg)
 }
 
-.menus__cards:hover .menus__cards__text {
+.menus__cards:hover .menus__cards__text { // Le "panneau" de validation occupe les 30% restants
     width:70%;
 }
 
