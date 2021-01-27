@@ -1,0 +1,91 @@
+// Mise en page du Loader
+
+.loader {
+    font-family: $shrikhand-font;
+    //font-size: 5rem; desktop
+    font-size: 3.5rem;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    animation: loadpop 3s both ; // le loader disparait au bout de X secondes. 
+
+    &__1 {
+        @include flexcenter;
+        position: fixed;
+        top: 30%;
+        width: 100%;
+        z-index: 1;
+        color: $color-primary;
+        
+
+    }
+
+    &__2 {
+        @include flexcenter;
+        position: fixed;
+        top: 30%;
+        width: 100%;
+        color: $color-secondary;
+    }
+}
+.loader__elements {
+    animation: loader 2s reverse 3; // spécifier le nombre de répétition, éviter infinite
+
+}
+.spinner {
+    position: fixed;
+    top: 45%;
+    left: 48%;
+    width: 100%;
+    width: 30px;
+    height: 30px;
+    border: 20px ridge $color-primary;
+    border-left-color: $color-secondary;
+    border-right-color: $color-tertiary;
+    border-radius: 100%;
+    animation: spinner 2s ease 3;
+}
+
+// Délais Animation Loader
+
+.loader__elements:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.loader__elements:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.loader__elements:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.loader__elements:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.loader__elements:nth-child(5) {
+    animation-delay: 0.7s;
+}
+
+.loader__elements:nth-child(6) {
+    animation-delay: 0.8s;
+}
+
+.loader__elements:nth-child(7) {
+    animation-delay: 0.9s;
+}
+
+.loader__elements:nth-child(8) {
+    animation-delay: 1s;
+}
+
+.loader__elements:nth-child(9) {
+    animation-delay: 1.2s;
+}
+
+// Apparition de la page après le Loader
+
+.main--header, .main, .instructions, .restaurants, .footer {
+    animation: pagepop 1s 3s both; //regler le delay en fonction de la durée du loader
+}

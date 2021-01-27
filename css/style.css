@@ -1,10 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
-@keyframes test {
+@keyframes heartfill {
+  0% {
+    filter: drop-shadow(0 0 1px black);
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+    font-size: 1.8rem;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  17% {
+    transform: rotate(68deg);
+  }
+  50% {
+    transform: rotate(200deg);
+  }
+  80% {
+    transform: rotate(300deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loadpop {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    transform: translate(-3px);
+  }
+  40% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    color: #99E2D0;
+    transform: translate(6px);
+    display: none;
+  }
+}
+@keyframes pagepop {
   from {
-    transform: scaleX(1);
+    opacity: 0;
   }
   to {
-    transform: scaleX(2);
+    opacity: 1;
   }
 }
 body {
@@ -37,6 +105,92 @@ h2 {
 
 ol {
   list-style-type: none;
+}
+
+.loader {
+  font-family: "Shrikhand", cursive;
+  font-size: 3.5rem;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  animation: loadpop 3s both;
+}
+.loader__1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 30%;
+  width: 100%;
+  z-index: 1;
+  color: #9356DC;
+}
+.loader__2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 30%;
+  width: 100%;
+  color: #FF79DA;
+}
+
+.loader__elements {
+  animation: loader 2s reverse 3;
+}
+
+.spinner {
+  position: fixed;
+  top: 45%;
+  left: 48%;
+  width: 100%;
+  width: 30px;
+  height: 30px;
+  border: 20px ridge #9356DC;
+  border-left-color: #FF79DA;
+  border-right-color: #99E2D0;
+  border-radius: 100%;
+  animation: spinner 2s ease 3;
+}
+
+.loader__elements:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.loader__elements:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.loader__elements:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.loader__elements:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.loader__elements:nth-child(5) {
+  animation-delay: 0.7s;
+}
+
+.loader__elements:nth-child(6) {
+  animation-delay: 0.8s;
+}
+
+.loader__elements:nth-child(7) {
+  animation-delay: 0.9s;
+}
+
+.loader__elements:nth-child(8) {
+  animation-delay: 1s;
+}
+
+.loader__elements:nth-child(9) {
+  animation-delay: 1.2s;
+}
+
+.main--header, .main, .instructions, .restaurants, .footer {
+  animation: pagepop 1s 3s both;
 }
 
 .header {
@@ -79,6 +233,7 @@ ol {
 
 .btn:hover {
   box-shadow: 6px 3px 6px #E0DEDE;
+  transform: scale(1.01);
 }
 
 .logo {
@@ -91,7 +246,8 @@ ol {
 
 .fa-heart {
   font-size: 1.7rem;
-  box-sizing: content-box;
+  cursor: pointer;
+  background: transparent;
 }
 
 .full-heart {
@@ -99,14 +255,18 @@ ol {
 }
 
 .empty-heart:hover ~ .full-heart {
-  display: initial;
+  display: none;
   color: transparent;
   background: linear-gradient(200deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
 }
 
 .empty-heart:hover {
-  display: none;
+  font-weight: bold;
+  color: transparent;
+  background: linear-gradient(200deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  animation: heartfill 1.5s ease-in;
 }
 
 .location {
