@@ -7,12 +7,13 @@
     z-index: 9999;
     height: 100%;
     width: 100%;
-    animation: loadpop 3s both ; // le loader disparait au bout de X secondes. 
+    animation: loadpop 10s both ; // le loader disparait au bout de X secondes. 
 
     &__1 {
-        @include flexcenter;
         position: fixed;
-        top: 30%;
+        @include flexcenter;
+        top: 35%;
+        margin: auto;
         width: 100%;
         z-index: 1;
         color: $color-primary;
@@ -21,9 +22,10 @@
     }
 
     &__2 {
-        @include flexcenter;
         position: fixed;
-        top: 30%;
+        @include flexcenter;
+        top: 35%;
+        margin: auto;
         width: 100%;
         color: $color-secondary;
     }
@@ -32,19 +34,23 @@
     animation: loader 2s reverse 3; // spécifier le nombre de répétition, éviter infinite
 
 }
-.spinner {
+.spinner::before {
+    content: "";
+    box-sizing: border-box;
     position: fixed;
-    top: 45%;
-    left: 48%;
-    width: 100%;
-    width: 30px;
-    height: 30px;
-    border: 20px ridge $color-primary;
-    border-left-color: $color-secondary;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 10px solid $color-primary;
+    border-top-color: $color-secondary;
     border-right-color: $color-tertiary;
-    border-radius: 100%;
-    animation: spinner 2s ease 3;
-}
+    border-bottom-color: $color-tertiary;
+    animation: spinner 1s linear infinite;
+  }
 
 // Délais Animation Loader
 
@@ -87,5 +93,5 @@
 // Apparition de la page après le Loader
 
 .main--header, .main, .instructions, .restaurants, .footer {
-    animation: pagepop 1s 3s both; //regler le delay en fonction de la durée du loader
+    animation: pagepop 1s 10s both; //regler le delay en fonction de la durée du loader
 }

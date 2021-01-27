@@ -1,5 +1,6 @@
 // Règles de mise en page pour les pages restaurants. 
 
+
 .header--restaurants {
     display: flex;
     align-content: center;
@@ -87,6 +88,7 @@
     border-radius: $card-radius;
     background-color: $bg-color;
     box-shadow: 0 8px 17px $box-shadow-color;
+
 
     &__text {
         overflow: hidden;

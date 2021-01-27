@@ -86,13 +86,29 @@
     display: none;
   }
 }
-// appartition index
+// Appartition index
 
 @keyframes pagepop {
   from {
     opacity: 0;
   }
   to {
+    opacity: 1;
+  }
+}
+
+// Apparition des tuiles 
+
+@keyframes menupop {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
     opacity: 1;
   }
 }

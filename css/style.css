@@ -75,6 +75,17 @@
     opacity: 1;
   }
 }
+@keyframes menupop {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   width: 100%;
@@ -113,24 +124,26 @@ ol {
   z-index: 9999;
   height: 100%;
   width: 100%;
-  animation: loadpop 3s both;
+  animation: loadpop 10s both;
 }
 .loader__1 {
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 30%;
+  top: 35%;
+  margin: auto;
   width: 100%;
   z-index: 1;
   color: #9356DC;
 }
 .loader__2 {
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 30%;
+  top: 35%;
+  margin: auto;
   width: 100%;
   color: #FF79DA;
 }
@@ -139,18 +152,22 @@ ol {
   animation: loader 2s reverse 3;
 }
 
-.spinner {
+.spinner::before {
+  content: "";
+  box-sizing: border-box;
   position: fixed;
-  top: 45%;
-  left: 48%;
-  width: 100%;
-  width: 30px;
-  height: 30px;
-  border: 20px ridge #9356DC;
-  border-left-color: #FF79DA;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 10px solid #9356DC;
+  border-top-color: #FF79DA;
   border-right-color: #99E2D0;
-  border-radius: 100%;
-  animation: spinner 2s ease 3;
+  border-bottom-color: #99E2D0;
+  animation: spinner 1s linear infinite;
 }
 
 .loader__elements:nth-child(1) {
@@ -190,7 +207,23 @@ ol {
 }
 
 .main--header, .main, .instructions, .restaurants, .footer {
-  animation: pagepop 1s 3s both;
+  animation: pagepop 1s 10s both;
+}
+
+.menus__sections {
+  animation: menupop 1.5s forwards;
+}
+
+.section--1 {
+  animation-delay: 0s;
+}
+
+.section--2 {
+  animation-delay: 0.2s;
+}
+
+.section--3 {
+  animation-delay: 0.3s;
 }
 
 .header {
@@ -250,18 +283,7 @@ ol {
   background: transparent;
 }
 
-.full-heart {
-  display: none;
-}
-
-.empty-heart:hover ~ .full-heart {
-  display: none;
-  color: transparent;
-  background: linear-gradient(200deg, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-}
-
-.empty-heart:hover {
+.empty-heart:hover, .empty-heart:active {
   font-weight: bold;
   color: transparent;
   background: linear-gradient(200deg, #9356DC, #FF79DA);

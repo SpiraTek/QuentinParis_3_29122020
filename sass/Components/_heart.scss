@@ -5,21 +5,8 @@
     background: transparent;
     
 }
-
-
-.full-heart {
-    display: none;
-}
-
-.empty-heart:hover ~ .full-heart{
-    display: none;
-    color: transparent;
-    background: linear-gradient(200deg, $color-primary, $color-secondary);
-    -webkit-background-clip: text; // Définit le texte / icone en tant que background
-
-} 
-
-.empty-heart:hover {
+ 
+.empty-heart:hover, .empty-heart:active {
     font-weight: bold;
     color: transparent;
     background: linear-gradient(200deg, $color-primary, $color-secondary);

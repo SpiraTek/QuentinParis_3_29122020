@@ -1,0 +1,16 @@
+    // ANIMATION APPARITION DES CARTES
+
+.menus__sections {
+    animation: menupop 1.5s forwards;
+}
+
+.section--1 {
+    animation-delay: 0s;
+}
+.section--2 {
+    animation-delay: 0.2s;
+}
+.section--3 {
+    animation-delay: 0.3s;
+}
+
