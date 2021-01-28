@@ -1,20 +1,21 @@
 // 
 // Propriétés de style de base
 //
-
-body {
-    font-family: $roboto-font;
-    width: $global-width;
-    margin:0;
-    padding: 0;
-    max-width: 767px;
-}
-
-input {
+html {
+    -webkit-tap-highlight-color:transparent; //empeche la surbrillance au clic
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+body {
+    font-family: $roboto-font;
+    width: $global-width;
+    margin:auto;
+    padding: 0;
+    max-width: 767px;
+}
+
 
 a {
     text-decoration: none;

@@ -88,18 +88,19 @@
     opacity: 1;
   }
 }
-body {
-  font-family: "Roboto", sans-serif;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  max-width: 767px;
-}
-
-input {
+html {
+  -webkit-tap-highlight-color: transparent;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  max-width: 767px;
 }
 
 a {
@@ -490,14 +491,18 @@ ol {
 .menus__head {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 2rem 1rem 0 0;
-  font-size: 1.1rem;
+  position: relative;
+  padding: 2rem 1rem 0 1rem;
+  font-size: 1.4rem;
   margin: auto;
 }
+.menus__maintitle {
+  font-weight: lighter;
+}
 .menus__heart {
-  margin-bottom: 5px;
-  padding-left: 1rem;
+  position: absolute;
+  right: 30px;
+  top: 40px;
 }
 .menus__subtitle {
   font-weight: normal;

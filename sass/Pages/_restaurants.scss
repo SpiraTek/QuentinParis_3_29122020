@@ -36,15 +36,19 @@
     &__head {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        padding: 2rem 1rem 0 0;
-        font-size: 1.1rem;
+        position: relative;
+        padding: 2rem 1rem 0 1rem;
+        font-size: 1.4rem;
         margin: auto;
+    }
+    &__maintitle {
+        font-weight: lighter;
     }
 
     &__heart {
-        margin-bottom: 5px;
-        padding-left: 1rem;
+        position: absolute;
+        right: 30px;
+        top: 40px;
     }
 
     &__subtitle {
