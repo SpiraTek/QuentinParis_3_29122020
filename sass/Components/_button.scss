@@ -16,3 +16,8 @@
     box-shadow: 6px 3px 6px $box-shadow-color;
     transform: scale(1.01);
 }
+
+.btn:active {
+    box-shadow: 9px 3px 6px $box-shadow-color;
+    transform: scale(1.02);
+}

@@ -10,7 +10,8 @@
     font-weight: bold;
     color: transparent;
     background: linear-gradient(200deg, $color-primary, $color-secondary);
+    background-position: bottom;
     -webkit-background-clip: text; // Définit le texte / icone en tant que background
-    animation: heartfill 1.5s ease-in; 
+    animation: heartfill 2s ease-in; 
     
 }

@@ -5,16 +5,20 @@
 @keyframes heartfill {
   0% {
     filter: drop-shadow(0 0 1px black);
-    opacity: 0.1;
+    opacity: 0;
+    background-size: 100% 0%;
 
   }
   50% {
+    filter: drop-shadow(0 0 1px black);
     opacity: 0.5;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
+    background-size: 100% 100%;
   }
 
   100% {
     opacity: 1;
+    background-size: 100% 100%;
     
   }
 } 
@@ -103,6 +107,7 @@
 @keyframes menupop {
   0% {
     opacity: 0;
+    transform: translate(0% 100%);
   }
 
   40% {
@@ -112,5 +117,6 @@
 
   100% {
     opacity: 1;
+    transform: translate(100% 100%);
   }
 }

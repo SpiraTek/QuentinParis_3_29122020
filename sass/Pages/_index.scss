@@ -69,7 +69,7 @@
    flex-direction: column;
    justify-content: space-between;
    width: 90%;
-   margin-top: 0;
+   margin: auto;
    padding-left: 10px;
    padding-right: 1rem;
    
@@ -84,10 +84,10 @@
     font-weight: bold;
     padding: 10px 15px;
     margin-top: 25px;
-    counter-increment: list;
+    counter-increment: list; //intégration des chiffres à gauche
 
         &::before {
-            content: counter(list);
+            content: counter(list); // intégration des chiffres à gauche
             font-weight: normal;
             color: $footer-txt-color;
             background-color: $color-primary;

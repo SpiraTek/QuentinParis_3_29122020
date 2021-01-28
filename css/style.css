@@ -2,14 +2,18 @@
 @keyframes heartfill {
   0% {
     filter: drop-shadow(0 0 1px black);
-    opacity: 0.1;
+    opacity: 0;
+    background-size: 100% 0%;
   }
   50% {
+    filter: drop-shadow(0 0 1px black);
     opacity: 0.5;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
+    background-size: 100% 100%;
   }
   100% {
     opacity: 1;
+    background-size: 100% 100%;
   }
 }
 @keyframes spinner {
@@ -79,6 +83,7 @@
 @keyframes menupop {
   0% {
     opacity: 0;
+    transform: translate(0% 100%);
   }
   40% {
     opacity: 0;
@@ -86,6 +91,7 @@
   }
   100% {
     opacity: 1;
+    transform: translate(100% 100%);
   }
 }
 html {
@@ -100,7 +106,7 @@ body {
   width: 100%;
   margin: auto;
   padding: 0;
-  max-width: 767px;
+  width: auto;
 }
 
 a {
@@ -215,7 +221,7 @@ ol {
 }
 
 .menus__sections {
-  animation: menupop 1.5s forwards;
+  animation: menupop 1.5s both;
 }
 
 .section--1 {
@@ -223,11 +229,11 @@ ol {
 }
 
 .section--2 {
-  animation-delay: 0.2s;
+  animation-delay: 0.7s;
 }
 
 .section--3 {
-  animation-delay: 0.3s;
+  animation-delay: 1.4s;
 }
 
 .header {
@@ -273,6 +279,11 @@ ol {
   transform: scale(1.01);
 }
 
+.btn:active {
+  box-shadow: 9px 3px 6px #E0DEDE;
+  transform: scale(1.02);
+}
+
 .logo {
   display: block;
   margin-left: auto;
@@ -291,8 +302,9 @@ ol {
   font-weight: bold;
   color: transparent;
   background: linear-gradient(200deg, #9356DC, #FF79DA);
+  background-position: bottom;
   -webkit-background-clip: text;
-  animation: heartfill 1.5s ease-in;
+  animation: heartfill 2s ease-in;
 }
 
 .location {
@@ -349,7 +361,7 @@ ol {
   flex-direction: column;
   justify-content: space-between;
   width: 90%;
-  margin-top: 0;
+  margin: auto;
   padding-left: 10px;
   padding-right: 1rem;
 }
