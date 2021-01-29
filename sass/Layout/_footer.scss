@@ -6,10 +6,23 @@
     padding: 10px 0 40px 20px;
     background-color: $bg-color-footer;
 
+    //responsive 
+    @include medium {
+        flex-direction: row;
+        padding: 0.6rem 1rem 0.6rem 1rem;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
     & h3 {
         font-family: $shrikhand-font;
         font-weight: normal;
         color: $btn-txt-color;
+
+        //responsive 
+    @include medium {
+        font-size: 1.4rem;
+    }
     }
 
     & a {

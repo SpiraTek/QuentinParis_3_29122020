@@ -1,7 +1,29 @@
 
-
+// Utilisation flex center
 @mixin flexcenter {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+// RESPONSIVE
+
+// Petites Tablettes 
+
+@mixin small {
+    @media all and (min-width: $screen-small-min) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media all and (min-width: $screen-tab-min) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media all and (min-width: $screen-desk-min) {
+        @content;
+    }
 }

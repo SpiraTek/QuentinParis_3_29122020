@@ -128,7 +128,6 @@ ol {
 }
 
 .loader {
-  display: none;
   font-family: "Shrikhand", cursive;
   font-size: 3.5rem;
   z-index: 9999;
@@ -216,8 +215,8 @@ ol {
   animation-delay: 1.2s;
 }
 
-.main--header, .main, .instructions, .restaurants, .footer {
-  animation: pagepop 1s;
+.main--header, .main, .instructions, .restaurants, .footer--main {
+  animation: pagepop 1s 10s both;
 }
 
 .menus__sections {
@@ -248,10 +247,23 @@ ol {
   padding: 10px 0 40px 20px;
   background-color: #353535;
 }
+@media all and (min-width: 666px) {
+  .footer {
+    flex-direction: row;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
 .footer h3 {
   font-family: "Shrikhand", cursive;
   font-weight: normal;
   color: white;
+}
+@media all and (min-width: 666px) {
+  .footer h3 {
+    font-size: 1.4rem;
+  }
 }
 .footer a {
   color: white;
@@ -365,6 +377,12 @@ ol {
   padding-left: 10px;
   padding-right: 1rem;
 }
+@media all and (min-width: 666px) {
+  .instructions__cards {
+    flex-direction: row;
+    width: 95%;
+  }
+}
 
 .instructions__cards__wrap {
   display: flex;
@@ -396,6 +414,7 @@ ol {
 
 .instructions__cards__wrap:hover {
   background-color: #F6EFFF;
+  cursor: help;
 }
 
 .instructions__cards__wrap:hover i {
@@ -414,6 +433,11 @@ ol {
   display: grid;
   grid-template-columns: 1fr;
   gap: 25px;
+}
+@media all and (min-width: 666px) {
+  .restaurants__grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .restaurants__card {
@@ -437,7 +461,13 @@ ol {
   margin: 0;
   border-radius: 20px 20px 0 0;
   width: auto;
+  height: auto;
   max-height: 180px;
+}
+@media all and (min-width: 501px) {
+  .restaurants__card--img {
+    max-height: 220px;
+  }
 }
 .restaurants__card--txt {
   line-height: 8px;
@@ -466,6 +496,11 @@ ol {
   font-size: 14px;
   width: 75px;
   height: 25px;
+}
+@media all and (min-width: 501px) {
+  .restaurants__card__new {
+    bottom: 260px;
+  }
 }
 
 .header--restaurants {
