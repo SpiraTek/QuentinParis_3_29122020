@@ -699,6 +699,11 @@ ol {
   background-color: white;
   box-shadow: 0 8px 17px #E0DEDE;
 }
+@media all and (min-width: 666px) {
+  .menus__cards {
+    width: 80%;
+  }
+}
 .menus__cards__text {
   overflow: hidden;
   white-space: nowrap;

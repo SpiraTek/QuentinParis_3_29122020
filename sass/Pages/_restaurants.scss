@@ -99,6 +99,10 @@
     border-radius: $card-radius;
     background-color: $bg-color;
     box-shadow: 0 8px 17px $box-shadow-color;
+    //responsive 
+    @include medium {
+        width: 80%;
+    }
 
 
     &__text {
