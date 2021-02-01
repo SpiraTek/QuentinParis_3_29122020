@@ -7,10 +7,10 @@
     background-color: $bg-color-footer;
 
     //responsive 
-    @include medium {
-        flex-direction: row;
-        padding: 0.6rem 1rem 0.6rem 1rem;
-        justify-content: space-evenly;
+    @include large {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        padding: 0.6rem 2rem 0.6rem 1rem;
         align-items: center;
     }
 
@@ -20,15 +20,23 @@
         color: $btn-txt-color;
 
         //responsive 
-    @include medium {
-        font-size: 1.4rem;
+        @include medium {
+            font-size: 1.4rem;
     }
+        @include large {
+            font-size: 2rem;
     }
+}
 
     & a {
         color: $btn-txt-color;
         display: block;
         line-height: 1.5rem;
+        //responsive 
+        @include large {
+            font-size: 1.2rem;
+        }
+
     }
 
     & i { 

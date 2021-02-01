@@ -7,11 +7,7 @@
     justify-content: center;
     margin-left: auto; 
     margin-right: auto;
-}
-
-.logo {
-    height: auto;
-    width: auto;
+    position: relative;
 }
 
 .arrow__icon {
@@ -20,11 +16,21 @@
     left: 1rem;
     top: 2rem;
     font-size: 1.2rem;
+    //responsive 
+    @include large {
+        @include flexcenter;
+        top: 50%;
+        bottom: 50%;
+        font-size: 1.5rem;
+    }
 }
 
 .menus__bgimg {
     display: grid;
     height: 250px;
+    @include large {
+        height: 350px;
+    }
 }
 
 .menus {
@@ -32,6 +38,13 @@
     margin-top: -2rem;
     background-color: $bg-color-alt;
     border-radius: $restaurant-top-radius;
+    // conception en grille responsive 
+    @include large {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        
+    }
 
     &__head {
         display: flex;
@@ -40,6 +53,11 @@
         padding: 2rem 1rem 0 1rem;
         font-size: 1.2rem;
         margin: auto;
+        @include large {
+            font-size: 1.5rem;
+            margin: 0;
+            padding: 2rem 1rem 2rem 1rem;
+        }
     }
     &__maintitle {
         font-weight: lighter;
@@ -185,6 +203,10 @@
 .bg--palette {
     background-image: url(../img/restau1.jpg);
     height: 260px;
+    //responsive 
+    @include large {
+        height: 370px;
+    }
 }
 
 // Note Enchantée 
@@ -192,6 +214,10 @@
     background-image: url(../img/restau2.jpg);
     height: 290px;
     background-position: bottom;
+    //responsive 
+    @include large {
+        height: 390px;
+    }
 }
 
 // A la Française
@@ -199,6 +225,11 @@
 .bg--francaise {
     background-image: url(../img/restau3.jpg);
     height: 280px;
+    //responsive 
+    @include large {
+        height: 380px;
+        background-position: center;
+    }
 }
 
 // Le Délice des Sens 
@@ -206,4 +237,9 @@
 .bg--delice {
     background-image: url(../img/restau4.jpg);
     height: 280px;
+    //responsive 
+    @include large {
+        height: 380px;
+        background-position: center;
+    }
 }

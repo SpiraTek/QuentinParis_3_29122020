@@ -76,7 +76,9 @@
    // responsive 
    @include medium {
        flex-direction: row;
-       width: 95%;
+       width: auto;
+       justify-content: space-around;
+       margin-top: auto;
    }
    
 
@@ -91,6 +93,10 @@
     padding: 10px 15px;
     margin-top: 25px;
     counter-increment: list; //intégration des chiffres à gauche
+    @include large {
+        padding-right: 70px;
+        justify-content: space-evenly;
+    }
 
         &::before {
             content: counter(list); // intégration des chiffres à gauche
@@ -128,6 +134,17 @@
 
 // Bloc Restaurants 
 
+.restaurants__title {
+    //responsive
+    @include large {
+        @include flexcenter;
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+        font-family: $shrikhand-font;
+        font-weight: lighter;
+    }
+}
+
 .restaurants {
     padding-top: 2rem;
     padding-bottom: 4rem;
@@ -135,6 +152,10 @@
     padding-left: 20px;
     padding-right: 20px;
     background-color: $bg-color-alt;
+    //responsive
+    @include large {
+        padding-top: 0.5rem;
+    }
 
     &__grid {
         display: grid;
@@ -178,6 +199,9 @@
         @include small {
             max-height: 220px;
         } 
+        @include large {
+            max-height: 300px;
+        }
          
     }
 
@@ -187,12 +211,21 @@
         margin-top: 20px;
         padding-bottom: 8px;
         position: relative;
+        //responsive 
+        @include large {
+            line-height: 12px;
+            font-size: 1.2rem;
+        }
     }
 
     &__like {
         position: absolute;
         top: 0px;
         right: 25px;
+        //responsive
+        @include large {
+            top: 10px;
+        }
     }
 
     &__new {
@@ -208,12 +241,15 @@
         font-weight: 500;
         color: darken($color-tertiary, 40%);
         font-size: 14px;
-        width: 75px;
-        height: 25px;
+        width: 80px;
+        height: 30px;
 
         //responsive
         @include small {
             bottom: 260px;
+        }
+        @include large {
+            bottom: 350px;
         }
     
     }

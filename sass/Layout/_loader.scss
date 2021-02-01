@@ -1,6 +1,7 @@
 // Mise en page du Loader
 
 .loader {
+    display: none;
     font-family: $shrikhand-font;
     //font-size: 5rem; desktop
     font-size: 3.5rem;
@@ -93,5 +94,5 @@
 // Apparition de la page après le Loader
 
 .main--header, .main, .instructions, .restaurants, .footer--main {
-    animation: pagepop 1s 10s both; //regler le delay en fonction de la durée du loader
+    animation: pagepop 1s //10s both; //regler le delay en fonction de la durée du loader
 }
