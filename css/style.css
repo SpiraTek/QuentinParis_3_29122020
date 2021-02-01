@@ -129,13 +129,12 @@ ol {
 }
 
 .loader {
-  display: none;
   font-family: "Shrikhand", cursive;
   font-size: 3.5rem;
   z-index: 9999;
   height: 100%;
   width: 100%;
-  animation: loadpop 10s both;
+  animation: loadpop 3s both;
 }
 .loader__1 {
   position: fixed;
@@ -218,7 +217,7 @@ ol {
 }
 
 .main--header, .main, .instructions, .restaurants, .footer--main {
-  animation: pagepop 1s;
+  animation: pagepop 1.5s 3.5s both;
 }
 
 .menus__sections {
@@ -411,9 +410,24 @@ ol {
   margin-left: 20px;
   padding-bottom: 20px;
 }
+@media all and (min-width: 1200px) {
+  .instructions {
+    margin-left: 0;
+  }
+}
 .instructions__title {
   padding-bottom: 0;
   margin-bottom: 0;
+}
+@media all and (min-width: 1200px) {
+  .instructions__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Shrikhand", cursive;
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+  }
 }
 
 .instructions__cards {
