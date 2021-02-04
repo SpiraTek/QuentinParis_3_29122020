@@ -377,19 +377,44 @@ ol {
 .location__icon {
   margin-bottom: 5px;
   margin-left: 25px;
-  font-size: 16px;
+  font-size: 1rem;
+}
+@media all and (min-width: 1200px) {
+  .location__icon {
+    font-size: 1.4rem;
+    margin-left: -15px;
+    margin-bottom: 10px;
+  }
 }
 .location__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   color: black;
   font-weight: bold;
   border: none;
   margin-left: 20px;
 }
+@media all and (min-width: 1200px) {
+  .location__text {
+    padding: 0.5rem 0 0.5rem 0;
+    margin-left: 15px;
+  }
+}
 .location__text::placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: black;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
+}
+@media all and (min-width: 1200px) {
+  .location__text::placeholder {
+    font-size: 1.4rem;
+    margin: auto;
+  }
 }
 
 .presentation {
@@ -413,6 +438,7 @@ ol {
 @media all and (min-width: 1200px) {
   .instructions {
     margin-left: 0;
+    padding-top: 20px;
   }
 }
 .instructions__title {
@@ -424,9 +450,9 @@ ol {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Shrikhand", cursive;
-    font-size: 1.7rem;
-    margin-bottom: 5px;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 10px;
   }
 }
 
@@ -514,6 +540,7 @@ ol {
 @media all and (min-width: 1200px) {
   .restaurants {
     padding-top: 0.5rem;
+    border-radius: 50px 50px 0 0;
   }
 }
 .restaurants__grid {
@@ -524,6 +551,12 @@ ol {
 @media all and (min-width: 666px) {
   .restaurants__grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (min-width: 1200px) {
+  .restaurants__grid {
+    width: 90%;
+    margin: auto;
   }
 }
 
@@ -608,6 +641,13 @@ ol {
 @media all and (min-width: 1200px) {
   .restaurants__card__new {
     bottom: 350px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .restaurants__card:hover {
+    transform: scale(1.01);
+    box-shadow: 6px 3px 6px #E0DEDE;
   }
 }
 
